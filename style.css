@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*
+RESET CSS
+*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,nav a, aside{
+    font-family: 'Roboto Slab', sans-serif;
+}
+h3{
+    font-size: 30px;
+}
+
+body{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 19px;
+    color: white;
+}
+.colorback1{
+    background: linear-gradient(130deg, rgba(164,161,105,1) 0%, rgba(207,199,115,1) 35%, rgba(255,249,164,1) 100%);
+}
+.colorback2{
+    background: linear-gradient(130deg, rgba(148,180,166,1) 0%, rgba(98,129,144,1) 100%);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+header{
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+}
+header a{
+    padding-right: 15px;
+    align-items: baseline;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+}
+nav a:hover,
+nav .active{
+    color: white  ;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 140%;
+    padding-bottom: 30px;
+}
+#text h3{
+    font-size: 12px;
+    font-weight: 200;
+}
+#text h1{
+    font-weight: 800;
+    font-size: 90px;
+    margin-top: -25px;
+}
+#text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.landhome{
+    display: flex;
+    height: 450px;
+    width: 85vw;
+    border-radius: 25px;
+    align-self: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* margin-top: -50px; */
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.landhome img{
+    border-radius: 25px;
+}
+.landhome a{
+    text-decoration: none;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+.landhome a h4{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px 5px;
+    background-color: rgba(207,199,115,1);
+    border-radius: 15px;
+}
+.back{
+    background: url(img/land1.png) center no-repeat;
+    background-size: cover;
+}
+
+.mini-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.mini-grid-item{
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    width: 80px;
+    justify-self: center;
+    background-color: rgba(164,161,105,1);
+}
+.mini-grid-item h4{
+    font-size: 9pt;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* PRODOTTI */
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+}
+
+.card, .card1{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 480px;
+    width: 85vw;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.card-footer{
+    padding: 30px;
+}
+.card-footer h4{
+    font-size: 23px;
+}
+.sale{
+    font-weight: 100;
+    text-decoration: line-through;
+    font-size: 10pt;
+}
+.back1{
+    background: url(img/land2.jpg) center no-repeat;
+    background-size: cover;
+}
+.back2{
+    background: url(img/lambo.jpg) center no-repeat;
+    background-size: cover;  
+}
+.back3{
+    background: url(img/buga.jpg) center no-repeat;
+    background-size: cover;  
+}
+.back4{
+    background: url(img/bmw.jpg) center no-repeat;
+    background-size: cover;    
+}
+.c1{
+    background: url(img/c1.webp) center no-repeat;
+    background-size: cover;
+}
+.c2{
+    background: url(img/c2.webp) center no-repeat;
+    background-size: cover;  
+}
+.c3{
+    background: url(img/c3.webp) center no-repeat;
+    background-size: cover;  
+}
+.c4{
+    background: url(img/c4.webp) center no-repeat;
+    background-size: cover;    
+}
+
+
+/* BMW Singolo */
+.grid-container-bmw{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+.grid-container-cara{
+    display: grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 70px;
+    padding: 50px 0px;
+}
+#cara{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 25px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+    justify-items: center;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    /* font-style: italic; */
+}
+#cara1{
+    font-size: 12px;
+    font-weight: 200;
+}
+.descrizione{
+    display: flex;
+    flex-direction: column;
+    padding: 0vw 7vw;
+}
+#descrizione{
+    display: flex;
+}
+
+
+
+
+/* FOOTER */
+.fwide{
+    background-color: #2d2d2d;
+    color: white;
+    margin-top: 20vw;
+}
+footer{
+    padding: 30px 25px 30px; /* a 3 cifre TOP | L+R | BOTTOM*/
+}
+footer .colonna{
+    padding: 0px 25px;
+}
+footer h3{
+    font-size: 15px;
+}
+footer p{
+    font-size: 10px;
+}
+footer .colonna a{
+    color: #fff;
+    text-decoration: underline;
+}
+footer .colonna a:hover{
+    color: #009eee;
+}
+.disc{
+    font-size: 8px;
+    padding: 0px 25px;
+    margin-top: 50px;
+    text-align: center;
+}
+.disp{
+    font-size: 12px;
+    color: #66fc03;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-color:#f0b70c;
+	border-radius:10px;
+	font-size:16px;
+	padding:15px 0px;
+	text-decoration:none;
+    height: auto;
+    width: 40vw;
+    margin-top: 10px;
+}
+.button:hover {
+	background-color:#e0aa09;
+}
+
+
+
+/* DESKTOP */
+
+@media (min-width: 800px){
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        box-sizing: border-box;
+    }
+    .card{
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        border-radius: 25px;
+        height: 45vw;
+        width: 35vw;
+        margin: 0px;
+    }
+    .card1{
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        border-radius: 25px;
+        height: 30vw;
+        width: 20vw;
+        margin: 0px;
+    }
+    .grid-container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        justify-items: center;
+        padding: 0 20px;
+        align-content: center;
+        align-items: center;
+    }
+    .banner{
+        width: 100%;
+        height: auto;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 140%;
+        padding: 0px 40px;
+        align-items: flex-start;
+    }
+    #text{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        align-items: end;
+        padding: 0px;
+    }
+    #text h3{
+        font-size: 1.2vw;
+        font-weight: 200;
+    }
+    #text h1{
+        font-weight: 800;
+        font-size: 9vw;
+        margin-top: -35px;
+    }
+    .landhome{
+        display: flex;
+        height: 40vw;
+        width: 30vw;
+        border-radius: 25px;
+        align-self: center;
+        justify-content: flex-end;
+        align-items: flex-end;
+        /* margin-top: -50px; */
+        padding-left: 30px;
+        padding-top: 20px;
+        margin-bottom: 60px;
+    }
+    .mini-grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 20px;
+        padding-left: 9vw;
+        padding-right: 50vw;
+        margin-top:  -20vw;
+        justify-content: space-evenly;
+    }
+    .mini-grid-item{
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        width: 8vw;
+        justify-self: center;
+        background-color: rgba(164,161,105,1);
+    }
+
+
+    /* BMW Singolo */
+    .grid-container-bmw{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        justify-items: center;
+        padding: 0 20px;
+        /* padding-left: 20px;
+        padding-right: 40px; */
+        align-content: center;
+        align-items: center;
+    }
+    .grid-container-cara{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        justify-items: center;
+        padding: 80px 20px;
+        align-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .descrizione h4{
+        font-size: 3.5vw;
+    }
+    
+}
