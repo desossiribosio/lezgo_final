@@ -218,7 +218,6 @@ a{
 .cara{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    padding-top: 25px;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -239,6 +238,7 @@ a{
 }
 #descrizione{
     display: flex;
+    padding-top: 25px;
 }
 
 
