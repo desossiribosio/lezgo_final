@@ -215,7 +215,7 @@ a{
     margin-top: 70px;
     padding: 50px 0px;
 }
-#cara{
+.cara{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     padding-top: 25px;
